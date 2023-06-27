@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My third Web Page</title>
+    <title>Blog</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -23,5 +23,17 @@
      </a>
     </div>
      </header>
+     <main>
+      <h1>ブログ投稿フォーム</h1>
+      <form action="submit.php" method="post">
+        <label for="title">タイトル:</label>
+        <input type="text" id="title" name="title" required><br>
+    
+        <label for="content">内容:</label>
+        <textarea id="content" name="content" rows="4" cols="50" required></textarea><br>
+    
+        <input type="submit" value="投稿する">
+      </form>
+     </main>
 </body>
 </html>
